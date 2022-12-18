@@ -1,0 +1,20 @@
+.sg-banner {
+	color: black;
+	text-align: right;
+	padding: 32px;
+	border-bottom: solid 3px black;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sg-title {
+	padding-left: 32px;
+    font-size: 42px;
+}
+
+.sg-logo {
+	height: 50px;
+	width: 50px;
+}
