@@ -1,5 +1,6 @@
 import Banner from'./Banner';
 import Cart from './Cart';
+import QuestionForm from './QuestionForm';
 import ShoppingList from './ShoppingList';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <Banner/>
     <Cart/>
     <ShoppingList/>
+    <QuestionForm/>
   </div>;
 }
 

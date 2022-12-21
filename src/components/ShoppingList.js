@@ -1,5 +1,7 @@
 import { sunGlassesList } from "../data/sunGlassesList";
-import '../styles/ShoppingList.css'
+import '../styles/ShoppingList.css';
+
+import GlassesItem from "./GlassesItem";
 
 function ShoppingList() {
 
@@ -20,13 +22,9 @@ function ShoppingList() {
       </select>
       <ul className="sg-glasses-list">
         {sunGlassesList.map((item) => (
-          <li key={`${item.id}`} className="sg-glasses-item">
-            {item.isSpecialOffer ? (
-              <div className="sg-sales">soldes</div>
-            ) : null}
-            {item.name}
-          </li>
-        ))}
+          <GlassesItem key={item.id} id={item.id} name={item.name} cover={item.cover} evaluation={item.evaluation} uv={item.uv}/>  
+        )
+        )}
       </ul>
     </div>
   );
