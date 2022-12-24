@@ -1,4 +1,12 @@
-import hello from '../assets/about_img.png';
+import caravan from '../assets/caravan.png';
+import aviator from '../assets/aviator.png';
+import ballistic from '../assets/ballistic.png';
+import clubmaster from '../assets/clubmaster.png';
+import flak from '../assets/flak.png';
+import polarized from '../assets/polarized.png';
+import radarEvPath from '../assets/radarEvPath.png';
+import reemless from '../assets/reemless.png';
+import wayfarer from '../assets/wayfarer.png';
 
 export const sunGlassesList = [
     {
@@ -7,7 +15,8 @@ export const sunGlassesList = [
 		id: '1ed',
         evaluation:4,
         uv:4,
-        cover: hello
+        cover: clubmaster,
+        price:20
     },
     {
         name: 'Wayfarer ',
@@ -16,7 +25,9 @@ export const sunGlassesList = [
         isSpecialOffer: true,
         evaluation:3,
         uv:3,
-        cover: hello
+        cover: wayfarer,
+        price:33
+
 
     },
     {
@@ -25,7 +36,8 @@ export const sunGlassesList = [
 		id: '3sd',
         evaluation:4,
         uv:2,
-        cover: hello
+        cover: aviator,
+        price:34
 
 
         
@@ -36,7 +48,8 @@ export const sunGlassesList = [
 		id: '4kk',
         evaluation:3,
         uv:4,
-        cover: hello
+        cover: caravan,
+        price:34
 
         
     },
@@ -47,7 +60,8 @@ export const sunGlassesList = [
         isSpecialOffer: true,
         evaluation:4,
         uv:2,
-        cover: hello
+        cover: radarEvPath,
+        price:55
 
     },
     {
@@ -56,7 +70,8 @@ export const sunGlassesList = [
 		id: '6hj',
         evaluation:4,
         uv:4,
-        cover: hello
+        cover: ballistic,
+        price:20
 
         
     },
@@ -66,7 +81,8 @@ export const sunGlassesList = [
 		id: '7uu',
         evaluation:2,
         uv:2,
-        cover: hello
+        cover: flak,
+        price:50
 
         
     },
@@ -77,7 +93,8 @@ export const sunGlassesList = [
         isSpecialOffer: true,
         evaluation:4,
         uv:4,
-        cover: hello
+        cover: polarized,
+        price:99
 
     },
     {
@@ -86,7 +103,8 @@ export const sunGlassesList = [
 		id: '9oop',
         evaluation:3,
         uv:1,
-        cover: hello
+        cover: reemless,
+        price:55
 
         
     }
