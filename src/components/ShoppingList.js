@@ -26,7 +26,7 @@ function ShoppingList({cart,updateCart}) {
         {sunGlassesList.map((item) => 
           !selectByCat || item.category === selectByCat ?
           <div key={item.id}>
-          <GlassesItem  id={item.id} name={item.name} cover={item.cover} evaluation={item.evaluation} uv={item.uv}/>  
+          <GlassesItem  id={item.id} name={item.name} cover={item.cover} evaluation={item.evaluation} uv={item.uv} price={item.price}/>  
           <button onClick={()=>addToCart(item.name,item.price)}>ajouter</button>
           </div>: null
         

@@ -1,10 +1,15 @@
 import { useState } from "react";
 import "../styles/Cart.css";
+import { useEffect } from "react";
 
 function Cart({ cart, updateCart }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const total = cart.reduce((acc, cur) => acc + cur.amount * cur.price, 0);
+
+  useEffect(() => {
+    document.title = `SG: ${total}€ d'achats`
+}, [total]);
 
   return isOpen ? (
     <div className="sg-cart">
@@ -16,11 +21,13 @@ function Cart({ cart, updateCart }) {
       </button>
       <h2>Panier</h2>
       {cart.map((item, index) => (
+        <div>
         <div key={`${item.name}-${index}`}>
-          {item.name} {item.price}$ * {item.amount}
-        </div>
+          {item.name} {item.price}€ * {item.amount}
+        </div><br /></div>
       ))}
-      Total : {total}€
+      <div>Total : {total}€</div>
+      <br />
       <button onClick={() => updateCart([])}>vider le panier</button>
     </div>
   ) : (
